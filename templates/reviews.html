@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block content %}
+
+<ul class="collapsible" data-collapsible="accordian">
+    {% for review in reviews %}
+    <li>
+        <div class="collapsible-header">
+            <div class="col s3">
+                <i class="material-icons">expand_more</i>
+                <a class="waves-effect waves-light btn-small">Edit</a>
+            </div>
+            <div class="col s9">
+                <i class="material-icons prefix">title</i>{{review.title.upper()}} - <i class="material-icons prefix">perm_identity</i> <strong>  {{review.author}}</strong> - <i class="material-icons prefix">event_seat</i> {{review.genre}} - <i class="material-icons prefix">grade</i>                {{review.rating}}</div>
+        </div>
+        
+        <div class="collapsible-body">
+            <span>{{review.review}}</span>
+        </div>
+    </li>
+
+    {% endfor %}
+</ul>
+
+{% endblock %}

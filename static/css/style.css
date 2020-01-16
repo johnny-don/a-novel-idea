@@ -1,0 +1,13 @@
+/* buttons */
+
+body {
+    background-color: red;
+}
+
+.btn-small {
+    background-color: brown;
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px;
+}
