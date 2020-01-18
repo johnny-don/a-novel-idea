@@ -4,17 +4,24 @@
     {% for review in reviews %}
     <li>
         <div class="collapsible-header">
-            <div class="col s3">
-                <i class="material-icons">expand_more</i>
-                <a class="waves-effect waves-light btn-small">Edit</a>
-            </div>
+           
             <div class="col s9">
-                <i class="material-icons prefix">title</i>{{review.title.upper()}} - <i class="material-icons prefix">perm_identity</i> <strong>  {{review.author}}</strong> - <i class="material-icons prefix">event_seat</i> {{review.genre}} - <i class="material-icons prefix">grade</i>                {{review.rating}}</div>
-        </div>
+                <i class="material-icons">expand_more</i>
+                <i class="material-icons prefix">title</i>{{review.title.upper()}} - <i class="material-icons prefix">perm_identity</i>
+                <strong>  {{review.author}}</strong> - 
+                <i class="material-icons prefix">event_seat</i> {{review.genre}} - 
+                <i class="material-icons prefix">grade</i> {{review.rating}}
+                </div>
+                <div class="col s3">
+                <a href "{{url_for('edit_review', review_id=review._id)}}" class="waves-effect waves-light btn">Edit</a>
+                <a href "{{url_for('delete_review', review_id=review._id)}}" class="waves-effect waves-light btn">Delete</a>
+            </div>
+            </div>
         
         <div class="collapsible-body">
             <span>{{review.review}}</span>
         </div>
+        
     </li>
 
     {% endfor %}
