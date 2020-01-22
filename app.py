@@ -32,7 +32,7 @@ def submit_review():
 @app.route('/edit_review/<review_id>')
 def edit_review(review_id):
     the_review = mongo.db.info.find_one({"_id": ObjectId(review_id)})
-    return redirect('editreview.html', review=the_review)
+    return render_template('editreview.html', review=the_review)
     
 
 @app.route('/update_review/<review_id>', methods=["POST"])
@@ -53,6 +53,14 @@ def update_review(review_id):
 def delete_review(review_id):
     mongo.db.info.remove({'_id': ObjectId(review_id)})
     return redirect(url_for('get_reviews'))
+    
+    
+    
+@app.route('/top_rated')
+def top_rated():
+    return render_template("toprated.html", ratings=mongo.db.info.find().sort("rating", -1))
+    
+
     
     
     

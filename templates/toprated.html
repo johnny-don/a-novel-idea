@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+    <h1>Top Rated</h1>
+<ul>
+    {% for rating in ratings %}
+
+    <li>
+        <div class="collapsible-header">
+
+            <div class="col s12">
+
+                <i class="material-icons prefix">title</i>{{rating.title.upper()}} 
+                <i class="material-icons prefix">grade</i> {{rating.rating}}
+            </div>
+    </li>
+    {% endfor %}
+
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

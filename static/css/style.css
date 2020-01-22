@@ -1,4 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
 /* buttons */
 
+body {
+    background-color: 'white';
+}
 
 
+.btn-small{
+   
+    margin: 10px;
+}
+
+/* fonts */
+
+.brand {
+   font-family: 'Special Elite', cursive;
+}
