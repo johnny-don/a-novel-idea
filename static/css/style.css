@@ -1,19 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 /* buttons */
 
 body {
-    background-color: 'white';
+        background-color: #e2e3da;
 }
 
 
-.btn-small{
-   
-    margin: 10px;
+.btn-small {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #a86d32;
+    color: white;
+    font-family: 'Inconsolata', monospace;
 }
 
 /* fonts */
 
 .brand {
    font-family: 'Special Elite', cursive;
+   margin: 10px;
+   padding: 5px;
+}
+
+.headline {
+   font-family: 'Special Elite', cursive;
+    font-weight: bold;
+    color: #a86d32;
+}
+
+
+.text-font {
+    font-family: 'Inconsolata', monospace;
+}
+
+/* navbar */
+
+.brand {
+   font-family: 'Special Elite', cursive;
+   margin: 10px;
+   padding: 5px;
+}
+
+.menu-link {
+    font-size: larger;
+    
+}
+
+.nav-foot {
+   
+    background-color: #a86d32;
+}
+
+/* footer */
+
+.page-footer {
+    padding-top: 20px;
+    color: white;
+    background-color: #a86d32;
+}
+
+/* icons */
+
+.material-icons {
+    margin: 10px;
+    
 }

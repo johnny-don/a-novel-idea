@@ -43,7 +43,7 @@ def update_review(review_id):
         'title':request.form.get('title'),
         'author':request.form.get('author'),
         'genre':request.form.get('genre'),
-        'rating':request.form.get('rating'),
+        'rating':int(request.form.get('rating')),
         'review':request.form.get('review')
     })
         

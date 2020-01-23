@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="container">
-    <h1>Top Rated</h1>
+    <h1 class="headline">Top Rated</h1>
 <ul>
     {% for rating in ratings %}
 
@@ -10,8 +10,8 @@
 
             <div class="col s12">
 
-                <i class="material-icons prefix">title</i>{{rating.title.upper()}} 
-                <i class="material-icons prefix">grade</i> {{rating.rating}}
+                <i class="material-icons prefix text-font">title</i>{{rating.title.upper()}} 
+                <i class="material-icons prefix text-font"><em>grade</em></i> {{rating.rating}}
             </div>
     </li>
     {% endfor %}

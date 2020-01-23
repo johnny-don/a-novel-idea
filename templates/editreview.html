@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1>Edit your review</h1>
+<h1 class="headline">Edit your review</h1>
 
 <div class="row">
     <form action="{{url_for('update_review', review_id=review._id) }}" method="POST" class="col s12">
@@ -8,39 +8,39 @@
         <div class="input-field col s6">
           <i class="material-icons prefix">title</i>
           <input id="title" name="title" type="text" class="materialize-textarea" value="{{review.title}}">
-          <label for="icon_prefix2">Title</label>
+          <label for="icon_prefix2 text-font">Title</label>
         </div>
       </div>
        <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">perm_identity</i>
           <input id="author" name="author" type="text" class="materialize-textarea" value="{{review.author}}">
-          <label for="icon_prefix2">Author</label>
+          <label for="icon_prefix2 text-font">Author</label>
         </div>
       </div>
        <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">event_seat</i>
           <input id="genre" name="genre" type="text" class="materialize-textarea" value="{{review.genre}}">
-          <label for="icon_prefix2">Genre</label>
+          <label for="icon_prefix2 text-font">Genre</label>
         </div>
       </div>
        <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">grade</i>
           <input id="rating" name="rating" type="number" class="materialize-textarea" value="{{review.rating}}">
-          <label for="icon_prefix2">Rating (1 - 10)</label>
+          <label for="icon_prefix2 text-font">Rating (1 - 10)</label>
         </div>
       </div>
        <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">comment</i>
           <textarea id="review" name="review" type="text" class="materialize-textarea" value="{{review.review}}"></textarea>
-          <label for="icon_prefix2">Write a Review</label>
+          <label for="icon_prefix2 text-font">Write a Review</label>
         </div>
       </div>
       <button class="btn waves-effect waves-light" type="submit" name="action">Edit
-    <i class="material-icons right">send</i>
+    <i class="material-icons right text-font">send</i>
   </button>
 
     </form>

@@ -1,26 +1,26 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container">
 <ul class="collapsible" data-collapsible="accordian">
-    <h1>Reviews</h1>
+    <h1 class="headline">Reviews</h1>
     {% for review in reviews %}
     <li>
         <div class="collapsible-header">
            
             <div class="col s8">
                 <i class="material-icons">expand_more</i>
-                <i class="material-icons prefix">title</i>{{review.title.upper()}} - <i class="material-icons prefix">perm_identity</i>
-                <strong>  {{review.author}}</strong> - 
-                <i class="material-icons prefix">event_seat</i> {{review.genre}} - 
-                <i class="material-icons prefix">grade</i> {{review.rating}}
+                <i class="material-icons prefix text-font">title</i>{{review.title.upper()}}  <i class="material-icons prefix text-font">perm_identity</i>
+                <strong>  {{review.author}}</strong>  
+                <i class="material-icons prefix text-font">event_seat</i> <em>{{review.genre}}</em>  
+                <i class="material-icons prefix text-font">grade</i> {{review.rating}}
                 </div>
                 <div class="col s4">
-                <a href="{{url_for('edit_review', review_id=review._id)}}" class="waves-effect waves-light btn-small">Edit</a>
-                <a href="{{url_for('delete_review', review_id=review._id)}}" class="waves-effect waves-light btn-small">Delete</a>
+                <a href="{{url_for('edit_review', review_id=review._id)}}" class="waves-effect waves-light btn-small text-font">Edit</a>
+                <a href="{{url_for('delete_review', review_id=review._id)}}" class="waves-effect waves-light btn-small text-font">Delete</a>
             </div>
             </div>
         
         <div class="collapsible-body">
-            <span>{{review.review}}</span>
+            <span class="text-font">{{review.review}}</span>
         </div>
         
     </li>
