@@ -24,7 +24,7 @@ body {
 
 .brand {
    font-family: 'Special Elite', cursive;
-   margin: 10px;
+   margin-left: 30px;
    padding: 5px;
 }
 
@@ -32,6 +32,7 @@ body {
    font-family: 'Special Elite', cursive;
     font-weight: bold;
     color: #a86d32;
+    margin: 10px;
 }
 
 
@@ -52,6 +53,10 @@ body {
     
 }
 
+.side-nav {
+   background-color: #a86d32; 
+}
+
 .nav-foot {
    
     background-color: #a86d32;
@@ -59,9 +64,10 @@ body {
 
 /* footer */
 
-.page-footer {
-    padding-top: 20px;
-    color: white;
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #e2e3da;
     background-color: #a86d32;
 }
 
@@ -70,4 +76,30 @@ body {
 .material-icons {
     margin: 10px;
     
+}
+
+/* image slider */
+
+.slider-text {
+    font-family: 'Inconsolata', monospace;
+    color: #e2e3da;
+    font-weight: bolder;
+   
+}
+
+.icons {
+    margin: 10px;
+    
+}
+
+
+
+.sections {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.review-section {
+    background-color: #e2e3da; 
+
 }

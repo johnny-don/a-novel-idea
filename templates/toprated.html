@@ -1,14 +1,17 @@
 {% extends 'base.html' %} {% block content %}
-
-<div class="container">
-    <h1 class="headline">Top Rated</h1>
+<h1 class="headline">Top Rated</h1>
+<div class="row sections">
+<div class="col s6">
+   
+    
 <ul>
+   
     {% for rating in ratings %}
 
     <li>
-        <div class="collapsible-header">
+       
 
-            <div class="col s12">
+            <div>
 
                 <i class="material-icons prefix text-font">title</i>{{rating.title.upper()}} 
                 <i class="material-icons prefix text-font"><em>grade</em></i> {{rating.rating}}
@@ -18,6 +21,40 @@
 
 </ul>
 </div>
+    <div class="slider col s6">
+    <ul class="slides">
+      <li>
+        <img src="static/images/home-bookshelf.jpg"> 
+        <div class="caption center-align">
+          <h3 class="text-font">Unwanted books?</h3>
+        </div>
+      </li>
+      <li>
+        <img src="static/images/woman-bookstore.jpg"> 
+        <div class="caption left-align">
+          <h3 class="text-font">We can find a new owner</h3>
+          
+        </div>
+      </li>
+      <li>
+        <img src="static/images/bookshop.jpg"> 
+        <div class="caption right-align">
+          <h3 class="text-font">Bring them in</h3>
+          
+        </div>
+      </li>
+      <li>
+        <img src="static/images/woman-back-bookstore.jpg"> 
+        <div class="caption center-align">
+          <h3 class="text-font">They are safe with us</h3>
+          <a href="https://last-bookshop.business.site/" class="light grey-text text-lighten-3 text-font">Click here to visit our store</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
 
 
 
