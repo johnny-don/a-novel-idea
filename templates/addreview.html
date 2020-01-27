@@ -3,75 +3,76 @@
 <h1 class="headline">Add a review</h1>
 
 <div class="row sections">
-    <div class="col s6">
+  <div class="col s6">
     <form action="{{url_for('submit_review') }}" method="POST" class="col s12">
-     
-        <div class="input-field">
-          <i class="material-icons prefix">title</i>
-          <input id="title" name="title" type="text" class="materialize-textarea">
-          <label for="icon_prefix2 text-font">Title</label>
-        </div>
-      
-       
-        <div class="input-field">
-          <i class="material-icons prefix">perm_identity</i>
-          <input id="author" name="author" type="text" class="materialize-textarea">
-          <label for="icon_prefix2 text-font">Author</label>
-        </div>
-      
-      
-        <div class="input-field">
-          <i class="material-icons prefix">event_seat</i>
-          <input id="genre" name="genre" type="text" class="materialize-textarea">
-          <label for="icon_prefix2 text-font">Genre</label>
-        </div>
-      
-       
-        <div class="input-field">
-          <i class="material-icons prefix">grade</i>
-          <input id="rating" name="rating" type="number" step="1" class="materialize-textarea">
-          <label for="icon_prefix2 text-font">Rating ( 1- 10 )</label>
-        </div>
-      
-       
-        <div class="input-field">
-          <i class="material-icons prefix">comment</i>
-          <textarea id="review" name="review" type="text" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2 text-font">Write a Review</label>
-        </div>
-      
+
+      <div class="input-field">
+        <i class="material-icons prefix">title</i>
+        <input id="title" name="title" type="text" class="materialize-textarea">
+        <label for="icon_prefix2 text-font">Title</label>
+      </div>
+
+
+      <div class="input-field">
+        <i class="material-icons prefix">perm_identity</i>
+        <input id="author" name="author" type="text" class="materialize-textarea">
+        <label for="icon_prefix2 text-font">Author</label>
+      </div>
+
+
+      <div class="input-field">
+        <i class="material-icons prefix">event_seat</i>
+        <input id="genre" name="genre" type="text" class="materialize-textarea">
+        <label for="icon_prefix2 text-font">Genre</label>
+      </div>
+
+
+      <div class="input-field">
+        <i class="material-icons prefix">grade</i>
+        <input id="rating" name="rating" type="number" step="1" class="materialize-textarea">
+        <label for="icon_prefix2 text-font">Rating ( 1- 10 )</label>
+      </div>
+
+
+      <div class="input-field">
+        <i class="material-icons prefix">comment</i>
+        <textarea id="review" name="review" type="text" class="materialize-textarea"></textarea>
+        <label for="icon_prefix2 text-font">Write a Review</label>
+      </div>
+
       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
     <i class="material-icons right text-font">send</i>
   </button>
 
     </form>
-    </div>
-    
-    
-      <div class="slider col s6">
+  </div>
+
+<! –– image slider is from materializecss.com ––>
+
+  <div class="slider col s6">
     <ul class="slides">
       <li>
-        <img src="static/images/home-bookshelf.jpg"> 
+        <img src="static/images/home-bookshelf.jpg">
         <div class="caption center-align">
           <h3 class=".slider-font">Unwanted books?</h3>
         </div>
       </li>
       <li>
-        <img src="static/images/woman-bookstore.jpg"> 
+        <img src="static/images/woman-bookstore.jpg">
         <div class="caption left-align">
           <h3 class=".slider-font">We can find a new owner</h3>
-          
+
         </div>
       </li>
       <li>
-        <img src="static/images/bookshop.jpg"> 
+        <img src="static/images/bookshop.jpg">
         <div class="caption right-align">
           <h3 class=".slider-font">Bring them in</h3>
-          
+
         </div>
       </li>
       <li>
-        <img src="static/images/woman-back-bookstore.jpg"> 
+        <img src="static/images/woman-back-bookstore.jpg">
         <div class="caption center-align">
           <h3 class=".slider-font">They are safe with us</h3>
           <a href="https://last-bookshop.business.site/" class="light grey-text text-lighten-3 .slider-font">Click here to visit our store</a>
@@ -79,9 +80,9 @@
       </li>
     </ul>
   </div>
-  </div>
-  
-  
-  
+</div>
+
+
+
 
 {% endblock %}

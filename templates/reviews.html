@@ -1,36 +1,42 @@
 {% extends 'base.html' %} {% block content %}
+
+
 <div class="row">
-<div class="col s12 sections">
-<ul class="collapsible" data-collapsible="accordian">
-    <h1 class="headline">Reviews</h1>
-    {% for review in reviews %}
-    <li>
-        <div class="collapsible-header review-section">
+    <div class="col s12 sections">
+        
+        <ul class="collapsible" data-collapsible="accordian">
            
-            <div class="review-section">
-                <i class="material-icons">expand_more</i>
-                <i class="material-icons prefix text-font icons">title</i>{{review.title.upper()}}  <i class="material-icons prefix text-font icons">perm_identity</i>
-                <strong>  {{review.author}}</strong>  
-                <i class="material-icons prefix text-font icons">event_seat</i> <em>{{review.genre}}</em>  
-                <i class="material-icons prefix text-font icons">grade</i> {{review.rating}}
+            <h1 class="headline">Reviews</h1>
+            
+            {% for review in reviews %}
+           
+            <li>
+                <div class="collapsible-header review-section">
+
+                    <div class="review-section">
+                        <i class="material-icons">expand_more</i>
+                        <i class="material-icons prefix text-font icons">title</i>{{review.title.upper()}} <i class="material-icons prefix text-font icons">perm_identity</i>
+                        <strong>  {{review.author}}</strong>
+                        <i class="material-icons prefix text-font icons">event_seat</i> <em>{{review.genre}}</em>
+                        <i class="material-icons prefix text-font icons">grade</i> {{review.rating}}
+                    </div>
+                    <div>
+                        <a href="{{url_for('edit_review', review_id=review._id)}}" class="waves-effect waves-light btn-small text-font icons">Edit</a>
+                        <a href="{{url_for('delete_review', review_id=review._id)}}" class="waves-effect waves-light btn-small text-font icons">Delete</a>
+                    </div>
                 </div>
-                <div>
-                <a href="{{url_for('edit_review', review_id=review._id)}}" class="waves-effect waves-light btn-small text-font icons">Edit</a>
-                <a href="{{url_for('delete_review', review_id=review._id)}}" class="waves-effect waves-light btn-small text-font icons">Delete</a>
-            </div>
-            </div>
-        
-        <div class="collapsible-body">
-            <span class="text-font">{{review.review}}</span>
-        </div>
-        
-    </li>
+
+                <div class="collapsible-body">
+                    <span class="text-font">{{review.review}}</span>
+                </div>
+
+            </li>
 
 
-    {% endfor %}
+            {% endfor %}
     </div>
-</ul>
- </div>
- </div>
+    </ul>
+</div>
+</div>
 
 {% endblock %}

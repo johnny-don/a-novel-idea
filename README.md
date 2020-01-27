@@ -117,7 +117,8 @@ On my HP monitor there is a gray bar below the footer on the homepage.
 
 When I add the endblock tag  to the top-rated page it gives me a jinja error. It seems to work without the endblock. I do not understand why this is happening.
 
-
+In the add review page I have the input for the rating set to number but when it is submitted to my database it is recorded as a string. This then 
+chnages the top-rated page.
 
 DEPLOYMENT
 

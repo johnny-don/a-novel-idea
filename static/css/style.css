@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
-/* buttons */
+/* these are my personal stylings, overriding or changing the materializecss.com styles */
 
 body {
         background-color: #e2e3da;
 }
 
+/* buttons */
 
 .btn-small {
     margin-left: 15px;
@@ -22,11 +23,6 @@ body {
 
 /* fonts */
 
-.brand {
-   font-family: 'Special Elite', cursive;
-   margin-left: 30px;
-   padding: 5px;
-}
 
 .headline {
    font-family: 'Special Elite', cursive;
@@ -78,6 +74,12 @@ body {
     
 }
 
+.icons {
+    margin: 10px;
+    
+}
+
+
 /* image slider */
 
 .slider-text {
@@ -87,12 +89,16 @@ body {
    
 }
 
-.icons {
-    margin: 10px;
-    
+.slider-font {
+    font-weight: 800;
+    color: #cdcdb1;
+    font-family: 'Inconsolata', monospace;
+
 }
 
 
+
+/* sections */
 
 .sections {
     margin-top: 30px;
@@ -105,12 +111,7 @@ body {
 
 }
 
-.slider-font {
-    font-weight: 800;
-    color: #cdcdb1;
-    font-family: 'Inconsolata', monospace;
 
-}
 
 .main-section {
     margin: 20px;
