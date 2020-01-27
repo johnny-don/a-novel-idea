@@ -5,11 +5,13 @@ from bson.objectid import ObjectId
 
 
 app = Flask(__name__)
+
 app.config["MONGO_DBNAME"] = 'novel_idea'
-app.config["MONGO_URI"] = 'mongodb+srv://johnny_don:2gardensmon@cluster0-kzp63.mongodb.net/novel_idea?retryWrites=true&w=majority'
+app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 
 mongo = PyMongo(app)
+
 
 
 @app.route('/')

@@ -115,6 +115,8 @@ In some display forms the arrow on the edit or submit button drops and isnt cent
 
 On my HP monitor there is a gray bar below the footer on the homepage.
 
+When I add the {% endblock %} to the top-rated page it gives me a jinja error. It seems to work without the endblock. I do not understand why this is happening.
+
 
 
 DEPLOYMENT

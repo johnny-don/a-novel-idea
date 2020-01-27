@@ -100,6 +100,18 @@ body {
 }
 
 .review-section {
-    background-color: #e2e3da; 
+    background-color: #e2e3da;
+    padding: 10px;
 
+}
+
+.slider-font {
+    font-weight: 800;
+    color: #cdcdb1;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+.main-section {
+    margin: 20px;
 }
